@@ -56,7 +56,10 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
-  	}
+  	},
+	boxShadow: {
+		'good-score': '0 0 0.3em 0.05em rgba(46, 194, 126, 0.6)',
+	}
   },
   plugins: [require("tailwindcss-animate")],
 };
