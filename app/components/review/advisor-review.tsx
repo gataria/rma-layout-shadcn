@@ -1,6 +1,7 @@
 import {
     Card,
     CardContent,
+    CardDescription,
     CardFooter,
     CardHeader,
     CardTitle
@@ -16,9 +17,12 @@ export default function AdvisorReview() {
                 <div className="flex justify-between">
                     <div className="flex space-x-3 items-center">
                         <Avatar>
-                            <AvatarFallback>RU</AvatarFallback>
+                            <AvatarFallback>4.8</AvatarFallback>
                         </Avatar>
-                        <CardTitle>Review User</CardTitle>
+                        <div>
+                            <CardTitle>Student</CardTitle>
+                            <CardDescription>Computer Science | Class of 2025</CardDescription>
+                        </div>
                     </div>
                     <div>
                         October 16, 2024
