@@ -9,6 +9,9 @@ import {
 import { Progress } from "@/components/ui/progress";
 import AdvisorReview from "@/app/components/review/advisor-review";
 import { publicSans } from "@/fonts";
+/* Icons */
+import { FaRegCalendarCheck, FaHandsHelping } from "react-icons/fa";
+import { TbMessageCircleHeart } from "react-icons/tb";
 
 export default function AdvisorPage() {
     return (
@@ -19,7 +22,7 @@ export default function AdvisorPage() {
                         Advisor Lastname
                     </div>
                     <div className="text-xl font-semibold">
-                        Academic advisor, UTSA College of Sciences
+                        Academic advisor, College of Sciences
                     </div>
                 </div>
                 <div className="flex flex-col items-center place-content-center font-black shadow-good-score rounded-lg p-6">
@@ -41,9 +44,33 @@ export default function AdvisorPage() {
                 </CardHeader>
                 <CardContent>
                     <div className="flex space-x-4">
-                        <Progress value={90} />
-                        <Progress value={76} />
-                        <Progress value={80} />
+                        <div className="flex flex-1 space-y-1 flex-col grow">
+                            <div className="flex space-x-1 items-center font-semibold">
+                                <FaRegCalendarCheck />
+                                <div>
+                                    Responsiveness
+                                </div>
+                            </div>
+                            <Progress value={90} />
+                        </div>
+                        <div className="flex flex-1 space-y-1 flex-col grow">
+                            <div className="flex space-x-1 items-center font-semibold">
+                                <FaHandsHelping />
+                                <div>
+                                    Helpfulness
+                                </div>
+                            </div>
+                            <Progress value={76} />
+                        </div>
+                        <div className="flex flex-1 space-y-1 flex-col grow">
+                            <div className="flex space-x-1 items-center font-semibold">
+                                <TbMessageCircleHeart />
+                                <div>
+                                    Approachability
+                                </div>
+                            </div>
+                            <Progress value={80} />
+                        </div>
                     </div>
                 </CardContent>
             </Card>
