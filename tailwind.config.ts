@@ -58,7 +58,7 @@ const config: Config = {
   		}
   	},
 	boxShadow: {
-		'good-score': '0 0 0.3em 0.05em rgba(46, 194, 126, 0.6)',
+		'good-score': '0 0 1em 0.05em rgba(46, 194, 126, 0.6)',
 	}
   },
   plugins: [require("tailwindcss-animate")],
