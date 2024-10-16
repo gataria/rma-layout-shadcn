@@ -28,7 +28,7 @@ export default function AdvisorPage() {
                     </CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <div className={`flex space-x-4`}>
+                    <div className="flex space-x-4">
                         <Progress value={90} />
                         <Progress value={76} />
                         <Progress value={80} />
