@@ -7,16 +7,29 @@ import {
     CardTitle
 } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import AdvisorReview from "@/app/components/review/advisor-review";
-import { publicSans } from "@/fonts";
 /* Icons */
 import { FaRegCalendarCheck, FaHandsHelping } from "react-icons/fa";
 import { TbMessageCircleHeart } from "react-icons/tb";
+import { IoIosWarning } from "react-icons/io";
 
 export default function AdvisorPage() {
     return (
         <>
-            <div className={`flex ${publicSans.className} space-x-4`}>
+            {/* Alert card */}
+            <Alert className="bg-amber-200 border-none text-2xl">
+                <IoIosWarning />
+                <AlertTitle className="font-black">
+                    Warning
+                </AlertTitle>
+                <AlertDescription className="text-lg">
+                    This advisor doesn't have many ratings yet. Evaluate this rating with caution!
+                </AlertDescription>
+            </Alert>
+            {/* Top cards */}
+            <div className="flex space-x-4">
+                {/* Name and title bar */}
                 <div className="flex flex-col grow place-content-center bg-slate-100 rounded-lg p-6">
                     <div className="text-6xl font-black">
                         Advisor Lastname
@@ -25,6 +38,7 @@ export default function AdvisorPage() {
                         Academic advisor, College of Sciences
                     </div>
                 </div>
+                {/* Score */}
                 <div className="flex flex-col items-center place-content-center font-black shadow-good-score rounded-lg p-6">
                     <div className="text-6xl pt-2">
                         4.8
@@ -36,6 +50,7 @@ export default function AdvisorPage() {
                     </div>
                 </div>
             </div>
+            {/* Category ratings card */}
             <Card>
                 <CardHeader>
                     <CardTitle>
@@ -74,6 +89,7 @@ export default function AdvisorPage() {
                     </div>
                 </CardContent>
             </Card>
+            {/* Reviews card */}
             <Card>
                 <CardHeader>
                     <CardTitle>
