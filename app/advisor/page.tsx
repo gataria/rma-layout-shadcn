@@ -7,6 +7,7 @@ import {
     CardTitle
 } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import AdvisorReview from "@/app/components/review/advisor-review";
 import { publicSans } from "@/fonts";
 
 export default function AdvisorPage() {
@@ -16,7 +17,7 @@ export default function AdvisorPage() {
                 <div className="grow bg-slate-100 rounded-lg p-6">
                     Advisor Lastname
                 </div>
-                <div className=" shadow-good-score rounded-lg p-6">
+                <div className="flex items-center py-auto shadow-good-score rounded-lg p-6">
                     4.8
                 </div>
             </div>
@@ -40,8 +41,10 @@ export default function AdvisorPage() {
                         Reviews
                     </CardTitle>
                 </CardHeader>
-                <CardContent>
-                    {/* TODO: make a component for an individual review */}
+                <CardContent className="space-y-4">
+                    <AdvisorReview />
+                    <AdvisorReview />
+                    <AdvisorReview />
                 </CardContent>
             </Card>
         </>
