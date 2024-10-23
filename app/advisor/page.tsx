@@ -1,8 +1,6 @@
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle
 } from "@/components/ui/card";
@@ -24,7 +22,7 @@ export default function AdvisorPage() {
                     Warning
                 </AlertTitle>
                 <AlertDescription className="text-lg">
-                    This advisor doesn't have many ratings yet. Evaluate this rating with caution!
+                    This advisor doesn&apos;t have many ratings yet. Evaluate this rating with caution!
                 </AlertDescription>
             </Alert>
             {/* Top cards */}
