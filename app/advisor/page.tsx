@@ -11,6 +11,8 @@ import AdvisorReview from "@/app/components/review/advisor-review";
 import { FaRegCalendarCheck, FaHandsHelping } from "react-icons/fa";
 import { TbMessageCircleHeart } from "react-icons/tb";
 import { IoIosWarning } from "react-icons/io";
+/* Fonts */
+import { spaceMono } from "@/fonts";
 
 export default function AdvisorPage() {
     return (

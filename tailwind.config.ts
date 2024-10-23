@@ -49,17 +49,24 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			/* Colors for logo */
+			'window-green': '#65693c',
+			'window-white': '#e0e0e0',
+			'window-maroon': '#802a21',
+			'window-navy': '#20263d',
+			'window-yellow': '#eac066',
+			'window-red': '#fe1700',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
   	},
 	boxShadow: {
 		'good-score': '0 0 1em 0.05em rgba(46, 194, 126, 0.6)',
-	}
+	},
   },
   plugins: [require("tailwindcss-animate")],
 };
